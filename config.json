@@ -1,44 +1,92 @@
 {
   "IDE": {
     "Antigravity": {
-      "scriptPath": "scritps/ide/install-antigravity.sh",
+      "scriptPath": "scripts/ide/install-antigravity.sh",
       "urlInfo": "https://antigravity.google/"
     },
     "Code": {
-      "scriptPath": "scritps/ide/install-code.sh",
+      "scriptPath": "scripts/ide/install-code.sh",
       "urlInfo": "https://code.visualstudio.com/"
     },
     "Cursor": {
-      "scriptPath": "scritps/ide/install-cursor.sh",
+      "scriptPath": "scripts/ide/install-cursor.sh",
       "urlInfo": "https://cursor.com/"
     },
     "Kiro": {
-      "scriptPath": "scritps/ide/install-kiro.sh",
+      "scriptPath": "scripts/ide/install-kiro.sh",
       "urlInfo": "https://kiro.dev/"
     },
     "WindSurf": {
-      "scriptPath": "scritps/ide/install-windsurf.sh",
-      "urlInfo": "https://windsurf-stable.codeiumdata.com/"
+      "scriptPath": "scripts/ide/install-windsurf.sh",
+      "urlInfo": "https://windsurf.com/"
     }
   },
   "OTHERS": {
     "DBeaver": {
-      "scriptPath": "scritps/others/install-dbeaver.sh",
-      "urlInfo": ""
+      "scriptPath": "scripts/others/install-dbeaver.sh",
+      "urlInfo": "https://dbeaver.io/"
     },
     "Discord": {
-      "scriptPath": "scritps/others/install-discord.sh",
-      "urlInfo": ""
+      "scriptPath": "scripts/others/install-discord.sh",
+      "urlInfo": "https://discord.com/"
+    }
+  },
+  "TERMINAL-EMULATORS": {
+    "Ghostty": {
+      "scriptPath": "scripts/terminal-emulators/install-ghostty.sh",
+      "urlInfo": "https://ghostty.org/docs"
+    },
+    "Kitty": {
+      "scriptPath": "scripts/terminal-emulators/install-kitty.sh",
+      "urlInfo": "https://sw.kovidgoyal.net/kitty/overview/"
+    },
+    "Yakuake": {
+      "scriptPath": "scripts/terminal-emulators/install-yakuake.sh",
+      "urlInfo": "https://apps.kde.org/yakuake/"
+    }
+  },
+  "TERMINAL-APPS": {
+    "btop": {
+      "scriptPath": "scripts/terminal-apps/install-btop.sh",
+      "urlInfo": "https://github.com/aristocratos/btop"
+    },
+    "glances": {
+      "scriptPath": "scripts/terminal-apps/install-glances.sh",
+      "urlInfo": "https://nicolargo.github.io/glances/"
+    },
+    "htop": {
+      "scriptPath": "scripts/terminal-apps/install-htop.sh",
+      "urlInfo": "https://htop.dev/"
+    },
+    "lf": {
+      "scriptPath": "scripts/terminal-apps/install-lf.sh",
+      "urlInfo": "https://github.com/gokcehan/lf"
+    },
+    "ncdu": {
+      "scriptPath": "scripts/terminal-apps/install-ncdu.sh",
+      "urlInfo": "https://dev.yorhel.nl/ncdu"
+    },
+    "ranger": {
+      "scriptPath": "scripts/terminal-apps/install-ranger.sh",
+      "urlInfo": "https://ranger.github.io/"
+    },
+    "tmux": {
+      "scriptPath": "scripts/terminal-apps/install-tmux.sh",
+      "urlInfo": "https://github.com/tmux/tmux"
+    },
+    "zellij": {
+      "scriptPath": "scripts/terminal-apps/install-zellij.sh",
+      "urlInfo": "https://zellij.dev/"
     }
   },
   "ZSH": {
     "Zsh": {
-      "scriptPath": "scritps/zsh/install-zsh.sh",
-      "urlInfo": ""
+      "scriptPath": "scripts/zsh/install-zsh.sh",
+      "urlInfo": "https://es.wikipedia.org/wiki/Zsh"
     },
     "OhMyZsh": {
-      "scriptPath": "scritps/zsh/install-oh-my-zsh.sh",
-      "urlInfo": ""
+      "scriptPath": "scripts/zsh/install-oh-my-zsh.sh",
+      "urlInfo": "https://ohmyz.sh/"
     }
   }
 }
