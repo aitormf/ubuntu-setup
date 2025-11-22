@@ -5,6 +5,12 @@
 
 set -euo pipefail
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+COMMON="$SCRIPT_DIR/../common.sh"
+if [ -f "$COMMON" ]; then
+  # shellcheck source=/dev/null
+  . "$COMMON"
+fi
 if command -v cursor >/dev/null 2>&1; then
   echo "Cursor ya está instalado: $(command -v cursor)"
   exit 0
@@ -62,10 +68,10 @@ install_deb() {
   tmpf="/tmp/cursor-$(date +%s).deb"
   download "$tmpf"
   echo "Instalando paquete deb..."
-  sudo apt-get install -y "$tmpf" || {
+  ${SUDO} apt-get install -y "$tmpf" || {
     # fallback to dpkg then fix deps
-    sudo dpkg -i "$tmpf" || true
-    sudo apt-get install -f -y
+    ${SUDO} dpkg -i "$tmpf" || true
+    ${SUDO} apt-get install -f -y
   }
   rm -f "$tmpf"
 }
@@ -75,9 +81,9 @@ install_rpm() {
   download "$tmpf"
   echo "Instalando paquete rpm..."
   if command -v dnf >/dev/null 2>&1; then
-    sudo dnf install -y "$tmpf"
+    ${SUDO} dnf install -y "$tmpf"
   else
-    sudo yum localinstall -y "$tmpf"
+    ${SUDO} yum localinstall -y "$tmpf"
   fi
   rm -f "$tmpf"
 }
@@ -88,7 +94,7 @@ install_appimage() {
   chmod +x "$tmpf"
   # Mover a /usr/local/bin si es posible
   if [ -w /usr/local/bin ]; then
-    sudo mv "$tmpf" /usr/local/bin/cursor && sudo chmod +x /usr/local/bin/cursor
+    ${SUDO} mv "$tmpf" /usr/local/bin/cursor && ${SUDO} chmod +x /usr/local/bin/cursor
     echo "Cursor AppImage instalado en /usr/local/bin/cursor"
   else
     echo "AppImage descargado en: $tmpf" 

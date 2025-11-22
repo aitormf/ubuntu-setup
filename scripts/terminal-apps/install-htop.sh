@@ -3,9 +3,16 @@
 
 set -euo pipefail
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+COMMON="$SCRIPT_DIR/../common.sh"
+if [ -f "$COMMON" ]; then
+  # shellcheck source=/dev/null
+  . "$COMMON"
+fi
+
 if command -v htop >/dev/null 2>&1; then
   echo "htop ya está instalado en el sistema: $(command -v htop)"
   exit 0
 fi
 
-sudo apt install htop
+${SUDO} apt install -y htop
