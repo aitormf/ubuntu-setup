@@ -43,7 +43,12 @@ install_package() {
 				${SUDO} apt-get update -y
 				UPDATED=1
 			fi
-			${SUDO} DEBIAN_FRONTEND=noninteractive apt-get install -y "$pkg"
+			# When using sudo, prefix with 'env' so the environment assignment is applied
+			if [ -n "$SUDO" ]; then
+				${SUDO} env DEBIAN_FRONTEND=noninteractive apt-get install -y "$pkg"
+			else
+				DEBIAN_FRONTEND=noninteractive apt-get install -y "$pkg"
+			fi
 			;;
 		dnf)
 			${SUDO} dnf install -y "$pkg"

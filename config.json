@@ -21,6 +21,32 @@
       "urlInfo": "https://windsurf.com/"
     }
   },
+  "BROWSERS": {
+    "Brave": {
+      "scriptPath": "scripts/browsers/install-brave.sh",
+      "urlInfo": "https://brave.com/"
+    },
+    "Chrome": {
+      "scriptPath": "scripts/browsers/install-chrome.sh",
+      "urlInfo": "https://www.google.com/chrome/"
+    },
+    "Chromium": {
+      "scriptPath": "scripts/browsers/install-chromium.sh",
+      "urlInfo": "https://www.chromium.org/"
+    },
+    "Edge": {
+      "scriptPath": "scripts/browsers/install-edge.sh",
+      "urlInfo": "https://www.microsoft.com/edge"
+    },
+    "Firefox": {
+      "scriptPath": "scripts/browsers/install-firefox.sh",
+      "urlInfo": "https://www.mozilla.org/firefox/"
+    },
+    "Vivaldi": {
+      "scriptPath": "scripts/browsers/install-vivaldi.sh",
+      "urlInfo": "https://vivaldi.com/"
+    }
+  },
   "OTHERS": {
     "DBeaver": {
       "scriptPath": "scripts/others/install-dbeaver.sh",
