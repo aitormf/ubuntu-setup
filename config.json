@@ -1,0 +1,44 @@
+{
+  "IDE": {
+    "Antigravity": {
+      "scriptPath": "scritps/ide/install-antigravity.sh",
+      "urlInfo": "https://antigravity.google/"
+    },
+    "Code": {
+      "scriptPath": "scritps/ide/install-code.sh",
+      "urlInfo": "https://code.visualstudio.com/"
+    },
+    "Cursor": {
+      "scriptPath": "scritps/ide/install-cursor.sh",
+      "urlInfo": "https://cursor.com/"
+    },
+    "Kiro": {
+      "scriptPath": "scritps/ide/install-kiro.sh",
+      "urlInfo": "https://kiro.dev/"
+    },
+    "WindSurf": {
+      "scriptPath": "scritps/ide/install-windsurf.sh",
+      "urlInfo": "https://windsurf-stable.codeiumdata.com/"
+    }
+  },
+  "OTHERS": {
+    "DBeaver": {
+      "scriptPath": "scritps/others/install-dbeaver.sh",
+      "urlInfo": ""
+    },
+    "Discord": {
+      "scriptPath": "scritps/others/install-discord.sh",
+      "urlInfo": ""
+    }
+  },
+  "ZSH": {
+    "Zsh": {
+      "scriptPath": "scritps/zsh/install-zsh.sh",
+      "urlInfo": ""
+    },
+    "OhMyZsh": {
+      "scriptPath": "scritps/zsh/install-oh-my-zsh.sh",
+      "urlInfo": ""
+    }
+  }
+}
